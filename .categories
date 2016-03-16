@@ -1,4 +1,5 @@
 lang:java
 lang:python
 lang:arduino
+lang:particle
 sku:LSM9DS0_I2CS
