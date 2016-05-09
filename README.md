@@ -69,10 +69,10 @@ Download (or git pull) the code in Beaglebone Black.
 
 Compile the c program.
 ```cpp
-$>gcc A3G4250DTR.c -o A3G4250DTR
+$>gcc LSM9DS0.c -o LSM9DS0
 ```
 Run the c program.
 ```cpp
-$>./A3G4250DTR
+$>./LSM9DS0
 ```
 #####The code output is the raw values of acceleration, angular acceleration and magnetic field in X, Y and Z axis.
