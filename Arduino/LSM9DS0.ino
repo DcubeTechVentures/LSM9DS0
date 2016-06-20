@@ -129,14 +129,14 @@ void loop()
       // zAccl lsb, zAccl msb
       if(Wire.available() == 1)
       {
-        data1[i] = Wire.read();
+        data[i] = Wire.read();
       }
     }
     
     // Convert the data
-    int xAccl = ((data1[1] * 256) + data1[0]);
-    int yAccl = ((data1[3] * 256) + data1[2]);
-    int zAccl = ((data1[5] * 256) + data1[4]);
+    int xAccl = ((data[1] * 256) + data[0]);
+    int yAccl = ((data[3] * 256) + data[2]);
+    int zAccl = ((data[5] * 256) + data[4]);
     
     for(int i = 0; i < 6; i++)
     {
@@ -155,7 +155,7 @@ void loop()
       // zMag lsb, zMag msb
       if(Wire.available() == 1)
       {
-        data1[i] = Wire.read();
+        data[i] = Wire.read();
       }
     }
 
