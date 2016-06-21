@@ -41,12 +41,14 @@ public class LSM9DS0
 		if(xGyro > 32767)
 		{
 			xGyro -= 65536;
-
+		}
+		
 		int yGyro = ((data[3] & 0xFF) * 256 + (data[2] & 0xFF)) ;
 		if(yGyro > 32767)
 		{
 			yGyro -= 65536;
-
+		}
+		
 		int zGyro = ((data[5] & 0xFF) * 256 + (data[4] & 0xFF)) ;
 		if(zGyro > 32767)
 		{
