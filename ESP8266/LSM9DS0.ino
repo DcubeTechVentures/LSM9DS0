@@ -189,9 +189,9 @@ void handleroot()
   // Output data to web server
   server.sendContent
   ("<html><head><meta http-equiv='refresh' content='3'</meta>"
-   "<h1 style=text-align:center;font-size:300%;color:blue;font-family:britannic bold;>CONTROL EVERYTHING</h1>"
-   "<h3 style=text-align:center;font-family:courier new;><a href=http://www.controleverything.com/ target=_blank>www.controleverything.com</a></h3><hr>"
-   "<h2 style=text-align:center;font-family:tahoma;><a href=https://www.controleverything.com/content/Color?sku=LSM9DSO_I2CS#tabs-0-product_tabset-2/ \n"
+   "<h1 style=text-align:center;font-size:300%;color:blue;font-family:britannic bold;>DCUBE STORE</h1>"
+   "<h3 style=text-align:center;font-family:courier new;><a href=http://www.dcubestore.com/ target=_blank>www.dcubestore.com</a></h3><hr>"
+   "<h2 style=text-align:center;font-family:tahoma;><a href=https://www.dcubestore.com/content/Color?sku=LSM9DSO_I2CS#tabs-0-product_tabset-2/ \n"
    "target=_blank>LSM9DS0 Sensor I2C Mini Module</a></h2>");
   server.sendContent
   ("<h3 style=text-align:center;font-family:tahoma;>X-Axis of rotation = " + String(xGyro));
