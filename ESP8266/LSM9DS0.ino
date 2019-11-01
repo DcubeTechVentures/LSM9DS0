@@ -2,7 +2,6 @@
 // Use it any way you want, profit or free, provided it fits in the licenses of its associated works.
 // LSM9DSO
 // This code is designed to work with the TCS3414_I2CS I2C Mini Module available from ControlEverything.com.
-// https://www.controleverything.com/content/Color?sku=LSM9DSO_I2CS#tabs-0-product_tabset-2
 
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
@@ -14,7 +13,7 @@
 // LSM9DSO Accl I2C address is 1E(30)
 #define Addr_Accl 0x1E
 
-const char* ssid = "your ssid network";
+const char* ssid = "your ssid";
 const char* password = "your password";
 int xGyro, yGyro, zGyro, xAccl, yAccl, zAccl, xMag, yMag, zMag;
 
@@ -189,10 +188,10 @@ void handleroot()
   // Output data to web server
   server.sendContent
   ("<html><head><meta http-equiv='refresh' content='3'</meta>"
-   "<h1 style=text-align:center;font-size:300%;color:blue;font-family:britannic bold;>DCUBE STORE</h1>"
-   "<h3 style=text-align:center;font-family:courier new;><a href=http://www.dcubestore.com/ target=_blank>www.dcubestore.com</a></h3><hr>"
-   "<h2 style=text-align:center;font-family:tahoma;><a href=https://www.dcubestore.com/content/Color?sku=LSM9DSO_I2CS#tabs-0-product_tabset-2/ \n"
-   "target=_blank>LSM9DS0 Sensor I2C Mini Module</a></h2>");
+   "<h1 style=text-align:center;font-size:300%;color:#719f2b;font-family:britannic bold;>DCUBE STORE </h1>"
+   "<h3 style=text-align:center;font-family:courier new; ><a href=http://www.dcubestore.com/ target=_blank style=color:#719f2b;>www.dcubestore.com</a></h3><hr>"
+   "<h2 style=text-align:center;font-family:tahoma; ><a href=https://www.dcubestore.com/content/Color?sku=LSM9DSO_I2CS#tabs-0-product_tabset-2/ \n"
+   "target=_blank style=color:#719f2b;>LSM9DS0 Sensor I2C Mini Module</a></h2>");
   server.sendContent
   ("<h3 style=text-align:center;font-family:tahoma;>X-Axis of rotation = " + String(xGyro));
   server.sendContent
